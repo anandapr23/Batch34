@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "DF-BATCH34-1"
+		},
+		"LS_BLOB_connectionString": {
+			"value": ""
+		},
+		"LS_BLOB_KV_connectionString": {
+			"value": "DefaultEndpointsProtocol=https;AccountName=adlsbatch342;"
+		},
+		"LS_SQL_password": {
+			"value": ""
+		},
+		"LS_KV_properties_typeProperties_baseUrl": {
+			"value": "https://kv-batch34.vault.azure.net/"
+		},
+		"LS_SQL_properties_typeProperties_server": {
+			"value": "sqlserverbatch342.database.windows.net"
+		},
+		"LS_SQL_properties_typeProperties_database": {
+			"value": "sqldbbatch342"
+		},
+		"LS_SQL_properties_typeProperties_userName": {
+			"value": "anand"
+		},
+		"LS_SQL_KV_properties_typeProperties_server": {
+			"value": "sqlserverbt34.database.windows.net"
+		},
+		"LS_SQL_KV_properties_typeProperties_database": {
+			"value": "sqldbBatch34"
+		},
+		"LS_SQL_KV_properties_typeProperties_userName": {
+			"value": "anand"
+		},
+		"Tumbling_Trigger_properties_pipeline_parameters_WindowStartTime": {
+			"value": "@trigger().outputs.windowStartTime"
+		},
+		"Tumbling_Trigger_properties_pipeline_parameters_WindowEndTime": {
+			"value": "@trigger().outputs.windowEndTime"
+		},
+		"eventtrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/d53250c5-c3ab-4b7e-8a96-2e7e68917146/resourceGroups/RG-BATCH34/providers/Microsoft.Storage/storageAccounts/adlsbatch342"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
