@@ -1,0 +1,31 @@
+{
+	"name": "pipeline3",
+	"properties": {
+		"activities": [
+			{
+				"name": "Web1",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"method": "POST",
+					"url": "https://management.azure.com/subscriptions/d53250c5-c3ab-4b7e-8a96-2e7e68917146/resourceGroups/RG-CENTRALINDIA/providers/Microsoft.DataFactory/factories/DF-VijayE/pipelines/WEBACTIVITY_TEST/createRun?api-version=2018-06-01",
+					"authentication": {
+						"type": "MSI",
+						"resource": "https://management.azure.com/"
+					}
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-07-15T04:07:18Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

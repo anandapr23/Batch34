@@ -1,0 +1,15 @@
+{
+	"name": "DF-BATCH34-1",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "australiaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a8669968-271c-4266-9a60-e61a2824ac64",
+		"tenantId": "98f2235d-6df3-496c-84fa-365ec8b9d31a"
+	}
+}

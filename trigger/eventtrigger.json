@@ -1,0 +1,24 @@
+{
+	"name": "eventtrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "eventbased_copy",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/adf/blobs/eventbasedfolder",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/d53250c5-c3ab-4b7e-8a96-2e7e68917146/resourceGroups/RG-BATCH34/providers/Microsoft.Storage/storageAccounts/adlsbatch342",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
